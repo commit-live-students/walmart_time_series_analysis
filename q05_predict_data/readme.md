@@ -18,5 +18,4 @@ Parameters :
 
 
 Returns:
-This function returns nothing. The plot should look similar to 
-
+This function returns nothing. The plot should look similar to https://github.com/commit-live-students/walmart_time_series_analysis/blob/master/images/forecast.png

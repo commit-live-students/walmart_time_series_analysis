@@ -26,7 +26,7 @@ Parameters:
 | variable | dataframe | compulsory | | Dataframe to be loaded |
 
 Returns:
-There is no return parameter for the function. The plot should be similar to (link to be pasted)
+There is no return parameter for the function. The plot should be similar to https://github.com/commit-live-students/walmart_time_series_analysis/blob/master/images/Stationary_Statistic.png
 
 #### Things to ponder upon
 Although mostly flat, there is a a very small upward trend in mean
