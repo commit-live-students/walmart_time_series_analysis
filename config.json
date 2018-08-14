@@ -1,0 +1,1 @@
+{ "notebook": { "folder": "walmart_time_series_analysis" , "q01_preprocessing": "q01_preprocessing.ipynb", "q02_test_stationarity": "q02_test_stationarity.ipynb", "q03_parameter_selection": "q03_parameter_selection.ipynb", "q04_model_data": "q04_model_data.ipynb", "q05_predict_data": "q05_predict_data.ipynb"} }
