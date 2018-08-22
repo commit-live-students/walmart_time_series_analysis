@@ -35,6 +35,6 @@ Also, the test statistic is a little different than the critical values owing to
 
 
 #### Note:
-Though in this particular task, we don't really need to make the data stationary, you can check out the different ways to make it stationary with this link-
+Though in this particular task, we don't really need to make the data stationary, you can check out the different ways to make it stationary on this link :https://www.researchgate.net/post/How_can_I_make_a_time-series_stationary
 
 
