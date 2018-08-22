@@ -19,14 +19,13 @@ seasonal_pdq = [(x[0], x[1], x[2], 12) for x in list(itertools.product(p, d, q))
 
 def q03_parameter_selection(df, pdq,seasonal_pdq):
     
-#    AIC_Score=10000000000000000
-#    y=df['Weekly_Sales']
+
 
 # To iterate through all the possible parameter combinations of 'order' and 'seasonal_order'     
     for param in pdq:
 
-        for param_seasonal in s_pdq:
-#While feeding the model, different parameter combinations, exceptions might get thrown for certain combinations            
+        for param_seasonal in seasonal_pdq:
+#While feeding different parameter combinations to the model, exceptions might get thrown for certain combinations            
             try:
             """ Write your code for finding the parameter combination with the lowest AIC score"""
             except:

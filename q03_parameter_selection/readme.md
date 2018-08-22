@@ -8,15 +8,21 @@ In this task, we will try to select the parameters for the model using AIC score
 
 ## Write a function `q03_parameter_selection` that:
 1. Takes the dataframe returned from q01_preprocessing, pdq and seasonal_pdq as parameters(pdq and s_pdq already pre-calculated in the notebook)
+
 2. Iterates over the two lists pdq and s_pdq as order and seasonal_order parameters of SARIMAX(https://www.statsmodels.org/dev/generated/statsmodels.tsa.statespace.sarimax.SARIMAX.html) respectively
+   (For ease of understanding, a code snippet is already provided to you in the notebook. The code snippet iterates through the different 
+   combinations of the parameters. Note there is also a 'try, except' statement provided to you to take care of exceptions thrown when 
+   feeding the different parameter combinations to the model)
+
 3. Finds the lowest AIC score among all the iterations.
+
 4. Returns the pdq and s_pdq element associated with the lowest AIC
 
 Parameters :
 
 | parameter | dtype          | Argument Type | default value | description                   |
 |-----------|----------------|---------------|---------------|-------------------------------|
-| variable  |pandas.DataFrame| compulsory    |              |  Dataframe to be loaded        |
+| variable  |pandas.DataFrame| compulsory    |               |  Dataframe to be loaded        |
 | variable  |list            | compulsory    |               |  All the different possible combinations of order parameter of SARIMAX        |
 | variable  |list            | compulsory    |               |  All the different possible combinations of seasonal_order parameter of SARIMAX        |
 
