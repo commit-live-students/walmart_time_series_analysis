@@ -2,6 +2,9 @@ import pandas as pd
 import datetime
 from dateutil.relativedelta import *
 import itertools
+plt.switch_backend('agg')
+%matplotlib inline
+
 
 from greyatomlib.walmart_time_series_analysis.q04_model_data.build import q04_model_data, q03_parameter_selection, q01_preprocessing
 

@@ -16,9 +16,9 @@ p = d = q = range(0, 2)
 pdq = list(itertools.product(p, d, q))
 #for seasonal
 seasonal_pdq = [(x[0], x[1], x[2], 12) for x in list(itertools.product(p, d, q))]
-pdq,s_pdq=q03_parameter_selection(df,pdq,seasonal_pdq)     
+pdq_element,s_pdq_element=q03_parameter_selection(df,pdq,seasonal_pdq)     
 
-RMSE,model=q04_model_data(df,pdq,s_pdq)
+RMSE,model=q04_model_data(df,pdq_element,s_pdq_element)
 
 class TestParam2(TestCase):
     def test_param2_args(self):
@@ -29,5 +29,5 @@ class TestParam2(TestCase):
      
    
     def test_R20(self):
-        self.assertAlmostEqual(RMSE,755.3337021937874,1,
+        self.assertAlmostEqual(RMSE,737.13021507140274,1,
                               "The Expected return value does not match with the given return value")

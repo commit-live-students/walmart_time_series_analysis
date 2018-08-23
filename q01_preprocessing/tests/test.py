@@ -19,6 +19,6 @@ class TestParam2(TestCase):
         self.assertEqual(df.shape, (33, 7) ,"Expected shape does not match given shape")
 
     def test_store_values(self):
-        self.assertEqual(df['Store'].all()==1, True ,"You haven't subsetted the data based on Store")
+        self.assertEqual(df['Store'].all()==1.0, True ,"You haven't subsetted the data based on Store")
 
      

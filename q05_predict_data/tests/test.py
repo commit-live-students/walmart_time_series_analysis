@@ -2,6 +2,9 @@
 import pandas as pd
 #import sys,os
 #sys.path.append(os.path.join(os.path.dirname(os.curdir)))
+plt.switch_backend('agg')
+%matplotlib inline
+
 from unittest import TestCase
 from ..build import q05_predict_data
 from greyatomlib.walmart_time_series_analysis.q04_model_data.build import q04_model_data,q03_parameter_selection, q01_preprocessing
@@ -16,9 +19,9 @@ p = d = q = range(0, 2)
 pdq = list(itertools.product(p, d, q))
 #for seasonal
 seasonal_pdq = [(x[0], x[1], x[2], 12) for x in list(itertools.product(p, d, q))]
-pdq,s_pdq=q03_parameter_selection(df,pdq,seasonal_pdq)     
+pdq_element,s_pdq_element=q03_parameter_selection(df,pdq,seasonal_pdq)     
 
-RMSE,model=q04_model_data(df,pdq,s_pdq)
+RMSE,model=q04_model_data(df,pdq_element,s_pdq_element)
 q05_predict_data(df,model)
 
 class TestParam2(TestCase):

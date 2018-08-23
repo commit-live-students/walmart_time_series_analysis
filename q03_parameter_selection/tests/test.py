@@ -22,7 +22,7 @@ pdq = list(itertools.product(p, d, q))
 #for seasonal
 seasonal_pdq = [(x[0], x[1], x[2], 12) for x in list(itertools.product(p, d, q))]
 
-pdq,s_pdq=q03_parameter_selection(df,pdq,seasonal_pdq)     
+pdq_element,s_pdq_element=q03_parameter_selection(df,pdq,seasonal_pdq)     
 
 class TestParam2(TestCase):
     def test_param2_args(self):
@@ -33,10 +33,10 @@ class TestParam2(TestCase):
 
 
     def test_pdq(self):
-        self.assertEqual(pdq, (0,0,0), "The Expected values do not match with the Returned value")
+        self.assertEqual(pdq_element, (0,0,0), "The Expected values do not match with the Returned value")
         
     
     def test_seasonal_pdq(self):
-        self.assertEqual(s_pdq, (1,0,0,12), "The Expected values do not match with the Returned value")
+        self.assertEqual(s_pdq_element, (1,0,0,12), "The Expected values do not match with the Returned value")
         
         
