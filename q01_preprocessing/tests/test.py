@@ -20,10 +20,10 @@ class TestParam2(TestCase):
     
     def test_store_values(self):
         values = train_df['Store'].value_counts().keys().tolist()[0]
-        self.assertEqual(values[0]==1, True ,"You haven't subsetted the data based on Store")
+        self.assertEqual(values==1, True ,"You haven't subsetted the data based on Store")
 
     def test_store_count(self):
         counts = train_df['Store'].value_counts().tolist()[0] 
-        self.assertEqual(counts[0]==33, True ,"You haven't subsetted the data based on Store")
+        self.assertEqual(counts==33, True ,"You haven't subsetted the data based on Store")
  
      
