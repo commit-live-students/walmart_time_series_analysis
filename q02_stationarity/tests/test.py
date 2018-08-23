@@ -2,8 +2,8 @@
 import pandas as pd
 #import sys,os
 #sys.path.append(os.path.join(os.path.dirname(os.curdir)))
+import matplotlib.pyplot as plt
 plt.switch_backend('agg')
-%matplotlib inline
 from unittest import TestCase
 from ..build import q02_stationarity
 from greyatomlib.walmart_time_series_analysis.q01_preprocessing.build import q01_preprocessing

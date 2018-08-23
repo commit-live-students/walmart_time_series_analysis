@@ -2,6 +2,7 @@ import pandas as pd
 import datetime
 from dateutil.relativedelta import *
 import itertools
+import matplotlib.pyplot as plt
 plt.switch_backend('agg')
 %matplotlib inline
 
