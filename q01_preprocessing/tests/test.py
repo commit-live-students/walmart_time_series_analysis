@@ -17,8 +17,13 @@ class TestParam2(TestCase):
 
     def test_df_shape(self):
         self.assertEqual(df.shape, (33, 7) ,"Expected shape does not match given shape")
-
+    
     def test_store_values(self):
-        self.assertEqual(df['Store'].all()==1.0, True ,"You haven't subsetted the data based on Store")
+        values = train_df['Store'].value_counts().keys().tolist()[0]
+        self.assertEqual(values[0]==1, True ,"You haven't subsetted the data based on Store")
 
+    def test_store_count(self):
+        counts = train_df['Store'].value_counts().tolist()[0] 
+        self.assertEqual(counts[0]==33, True ,"You haven't subsetted the data based on Store")
+ 
      
